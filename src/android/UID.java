@@ -99,8 +99,8 @@ public class UID extends CordovaPlugin {
 	 * @return
 	 */
 	public String getUuid(Context context) {
-		String uuid = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
-		return uuid;
+		// String uuid = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
+		return "uuid";
 	}
 
 	/**
@@ -110,9 +110,9 @@ public class UID extends CordovaPlugin {
 	 * @return
 	 */
 	public String getImei(Context context) {
-		final TelephonyManager mTelephony = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-		String imei = mTelephony.getDeviceId();
-		return imei;
+		// final TelephonyManager mTelephony = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+		// String imei = mTelephony.getDeviceId();
+		return "imei";
 	}
 
 	/**
@@ -122,9 +122,9 @@ public class UID extends CordovaPlugin {
 	 * @return
 	 */
 	public String getImsi(Context context) {
-		final TelephonyManager mTelephony = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-		String imsi = mTelephony.getSubscriberId();
-		return imsi;
+		// final TelephonyManager mTelephony = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+		// String imsi = mTelephony.getSubscriberId();
+		return "imsi";
 	}
 
 	/**
@@ -134,9 +134,9 @@ public class UID extends CordovaPlugin {
 	 * @return
 	 */
 	public String getIccid(Context context) {
-		final TelephonyManager mTelephony = (TelephonyManager)context.getSystemService(Context.TELEPHONY_SERVICE);
-		String iccid = mTelephony.getSimSerialNumber();
-		return iccid;
+		// final TelephonyManager mTelephony = (TelephonyManager)context.getSystemService(Context.TELEPHONY_SERVICE);
+		// String iccid = mTelephony.getSimSerialNumber();
+		return "iccid";
 	}
 
 	/**
