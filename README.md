@@ -1,7 +1,8 @@
 # cordova.plugins.uid
 Note: This plugin is forked from this [repository](https://github.com/hygieiasoft/cordova-plugin-uid).
 
-Cordova plugin to get unique identifiers: UUID, IMEI, IMSI, ICCID and MAC.
+Originally this Cordova plugin is used to get unique identifiers: UUID, IMEI, IMSI, ICCID and MAC.
+But i modified this code, just to get MAC Address with REQUEST_READ_PHONE_STATE Permission. 
 
 This plugin defines a `cordova.plugins.uid` object.
 The object is not available until after the `deviceready` event.
